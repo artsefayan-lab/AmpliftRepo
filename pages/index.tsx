@@ -88,7 +88,7 @@ export default function Home() {
       {activeView==='home' && <main>
         <section className="hero">
           <div className="what-it-is"><div className="wit-dot"></div><span><span className="wit-text">Influencer marketing platform</span> — for restaurants, brands &amp; businesses</span></div>
-          <h1>Pay once.<br/>Get your brand on<br/><span className="accent">every platform at once.</span></h1>
+          <h1>One Payment.<br/>Every Platform.<br/><span className="accent">AMPLIFY.</span></h1>
           <p className="hero-explainer">Amplify connects <strong>your business</strong> with a network of <strong>influencers, bloggers, and creators</strong> — they post about you on Instagram, TikTok, YouTube, podcasts, newsletters, and more. <strong>One campaign. One price. Everywhere.</strong></p>
           <div className="how-strip">
             <div className="hs-step"><div className="hs-num">Step 1</div><div className="hs-label">Tell us about your brand</div></div>

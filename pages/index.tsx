@@ -459,7 +459,7 @@ export default function Home() {
         .creators-sec{padding:5rem 2.5rem;max-width:1200px;margin:0 auto}
         .sec-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:3rem}
         .sec-lbl{font-size:0.72rem;color:#c8f53a;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;margin-bottom:0.5rem}
-        .sec-title{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1.05}
+        .sec-title{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#fff;letter-spacing:-0.5px;line-height:1.2}
         .sec-desc{font-size:0.9rem;color:#888;max-width:280px;line-height:1.7;text-align:right}
         .cwall{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333;border:1px solid #333;border-radius:1rem;overflow:hidden}
         .ctile{background:#111;padding:1.75rem;cursor:pointer;position:relative}.ctile:hover{background:#1a1a1a}
@@ -505,7 +505,7 @@ export default function Home() {
         .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#333;border:1px solid #333;border-radius:1rem;overflow:hidden;margin-top:3rem}
         .pcard{background:#111;padding:2.5rem}.pcard.hot{background:#c8f53a}
         .ptier{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#888;margin-bottom:1.25rem}.pcard.hot .ptier{color:rgba(0,0,0,0.5)}
-        .pnum{font-family:'Syne',sans-serif;font-size:3.5rem;font-weight:800;color:#fff;line-height:1}.pcard.hot .pnum{color:#0a0a0a}
+        .pnum{font-family:'Syne',sans-serif;font-size:2.25rem;font-weight:700;color:#fff;line-height:1}.pcard.hot .pnum{color:#0a0a0a}
         .pnum sup{font-size:1.5rem;vertical-align:super}
         .pper{font-size:0.8rem;color:#888;margin-bottom:1.5rem}.pcard.hot .pper{color:rgba(0,0,0,0.5)}
         .pline{height:1px;background:#333;margin-bottom:1.5rem}.pcard.hot .pline{background:rgba(0,0,0,0.15)}

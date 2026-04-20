@@ -80,7 +80,7 @@ export default function Home() {
           <li><a href="#how">How it works</a></li>
           <li><a href="#creators">Creators</a></li>
           <li><a href="#pricing">Pricing</a></li>
-          <li><button className="nav-link-btn" onClick={()=>setActiveView('apply')}>Join as creator</button></li>
+          <li><button className="nav-link-btn" onClick={()=>setActiveView('apply')}>Join as creator — free</button></li>
         </ul>
         <button className="nav-cta" onClick={()=>document.getElementById('pricing')?.scrollIntoView({behavior:'smooth'})}>Launch campaign</button>
       </nav>
@@ -275,11 +275,11 @@ export default function Home() {
         </div>
 
         <div className="cta-bar">
-          <h2>Ready to go everywhere at once?</h2>
+          <h2>Ready to reach millions?</h2>
           <p>Join 3,200+ brands already reaching millions through Amplify.</p>
           <div className="cta-btns">
             <button className="cta-blk" onClick={()=>document.getElementById('pricing')?.scrollIntoView({behavior:'smooth'})}>Launch your campaign →</button>
-            <button className="cta-ghost" onClick={()=>setActiveView('apply')}>Join as a creator</button>
+            <button className="cta-ghost" onClick={()=>setActiveView('apply')}>Apply as a creator — free →</button>
           </div>
         </div>
 

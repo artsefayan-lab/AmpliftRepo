@@ -274,12 +274,12 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="cta-bar">
-          <h2>Ready to reach millions?</h2>
-          <p>Join 3,200+ brands already reaching millions through Amplify.</p>
+        <div className="split-cta"><div className="split-brand">
+          <div className="split-tag">For businesses</div><h2 className="split-h2">Ready to reach millions?</h2>
+          <p>Launch a campaign and get your brand in front of millions — starting at $499.</p>
           <div className="cta-btns">
             <button className="cta-blk" onClick={()=>document.getElementById('pricing')?.scrollIntoView({behavior:'smooth'})}>Launch your campaign →</button>
-            <button className="cta-ghost" onClick={()=>setActiveView('apply')}>Apply as a creator — free →</button>
+            <button className="cta-ghost" onClick={()=>setActiveView('apply')}>Apply as a creator — free →</button></div><div className="split-creator"><div className="split-tag-dark">For creators</div><h2 className="split-h2">Blogger, influencer or writer?</h2><p className="split-desc">Join our network free. Get matched with brand campaigns that fit your niche.</p><button className="split-btn-white" onClick={()=>setActiveView('apply')}>Apply to join — it's free →</button></div></div>
           </div>
         </div>
 
@@ -529,7 +529,7 @@ export default function Home() {
         .gico{width:40px;height:40px;border-radius:0.6rem;background:rgba(200,245,58,0.1);border:1px solid rgba(200,245,58,0.2);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
         .gtitle{font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:#fff;margin-bottom:0.35rem}
         .gdesc{font-size:0.8rem;color:#888;line-height:1.6}
-        .cta-bar{background:#c8f53a;padding:4rem 2.5rem;text-align:center}
+        
         .cta-bar h2{font-family:'Syne',sans-serif;font-size:3.5rem;font-weight:800;color:#0a0a0a;letter-spacing:-1px;margin-bottom:1rem}
         .cta-bar p{font-size:1rem;color:rgba(0,0,0,0.6);margin-bottom:2rem;font-weight:300}
         .cta-btns{display:flex;gap:1rem;justify-content:center}
@@ -585,3 +585,13 @@ export default function Home() {
     </>
   )
 }
+
+.split-cta{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #333}
+.split-brand{background:#c8f53a;padding:4rem 3rem}
+.split-creator{background:#111;padding:4rem 3rem}
+.split-tag{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(0,0,0,0.5);margin-bottom:1rem}
+.split-tag-dark{font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#c8f53a;margin-bottom:1rem}
+.split-h2{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:#0a0a0a;margin-bottom:1rem;line-height:1.1}
+.split-creator .split-h2{color:#fff}
+.split-desc{font-size:0.95rem;line-height:1.75;font-weight:300;margin-bottom:2rem;color:rgba(0,0,0,0.6)}
+.split-btn-white{background:#c8f53a;color:#0a0a0a;padding:0.9rem 2rem;border-radius:2rem;font-size:0.9rem;font-weight:700;border:none;cursor:pointer}

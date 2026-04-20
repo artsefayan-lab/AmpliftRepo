@@ -33,6 +33,40 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
 
+  try {
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card'],
+      line_items: [
+        {
+          price_data: {
+            currency: 'usd',
+            product_data: {
+              name: planData.name,
+              description: planData.description,
+            },
+            unit_amount: planData.amount,
+          },
+          quantity: 1,
+        },
+      ],
+      mode: 'payment',
+      customer_email: email || undefined,
+      metadata: {
+        plan,
+        businessName: businessName || '',
+      },
+      success_url: `${siteUrl}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${siteUrl}/#pricing`,
+    })
+    return res.status(200).json({ url: session.url })
+  } catch (err: any) {
+    console.error('Stripe error:', err.message)
+    return res.status(500).json({ error: err.message })
+  }
+}
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],
     line_items: [

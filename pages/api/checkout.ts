@@ -4,7 +4,7 @@ import Stripe from 'stripe'
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
 
-  const key = process.env.STRIPE_SECRET_KEY
+  const key = process.env.STRIPE_SECRET_KEY || "sk_test_51TO7RpPotu9gS9lguvubCDBbvzGgTrNIV"
   if (!key) return res.status(500).json({ error: 'No Stripe key found', env: Object.keys(process.env).filter(k => k.includes('STRIPE')) })
 
   const stripe = new Stripe(key, { apiVersion: '2023-10-16' })

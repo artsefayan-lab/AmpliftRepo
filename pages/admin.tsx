@@ -252,7 +252,7 @@ export default function Admin() {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         .toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;padding:0.75rem 1.5rem;border-radius:2rem;font-size:0.875rem;font-weight:500;z-index:9999}
         .nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2.5rem;border-bottom:1px solid var(--cream3);background:var(--cream);position:sticky;top:0;z-index:100}
         .logo{font-family:'DM Serif Display',serif;font-size:1.35rem;color:var(--accent);display:flex;align-items:center;gap:0.75rem}

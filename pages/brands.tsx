@@ -151,7 +151,7 @@ export default function BrandsPage() {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         .nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;border-bottom:1px solid var(--cream3);background:var(--cream);position:sticky;top:0;z-index:100}
         .logo{font-family:'DM Serif Display',serif;font-size:1.5rem;color:var(--accent);text-decoration:none}
         .logo span{color:var(--gold)}

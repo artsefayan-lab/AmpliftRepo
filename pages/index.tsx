@@ -450,7 +450,7 @@ export default function Home() {
         .t-name{font-family:'Syne',sans-serif;font-size:1rem;font-weight:800;color:#555}.t-sub{font-size:0.6rem;color:#333;letter-spacing:0.08em;text-transform:uppercase;margin-top:2px}
         .stats-strip{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #333}
         .s-block{padding:2.5rem;border-right:1px solid #333;text-align:center}.s-block:last-child{border-right:none}
-        .s-big{font-family:'Syne',sans-serif;font-size:3rem;font-weight:800;color:#c8f53a}.s-lbl{font-size:0.8rem;color:#888;margin-top:0.25rem}
+        .s-big{font-family:'Syne',sans-serif;font-size:2rem;font-weight:700;color:#c8f53a}.s-lbl{font-size:0.8rem;color:#888;margin-top:0.25rem}
         .pill-strip{padding:2.5rem;border-bottom:1px solid #333;background:#111}
         .pill-lbl{font-size:0.7rem;color:#888;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem}
         .pill-row{display:flex;gap:0.75rem;flex-wrap:wrap}

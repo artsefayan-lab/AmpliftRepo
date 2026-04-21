@@ -34,7 +34,7 @@ export default function Home() {
   }
 
   async function startCheckout(plan: string) {
-    setCheckoutLoading(plan)
+    window.location.href = plan === "starter" ? "https://buy.stripe.com/00w6oIbblbCP5Tn0nKeIw00" : plan === "growth" ? "https://buy.stripe.com/9B68wQ4MX9uHa9D2vSeIw01" : "mailto:hello@amplify.com"
     try {
       const res = await fetch('/api/checkout', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ plan }) })
       const data = await res.json()
